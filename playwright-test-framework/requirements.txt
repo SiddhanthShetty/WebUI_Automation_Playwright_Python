@@ -1,5 +1,7 @@
-playwright
 pytest
-pytest-playwright
-asyncio
-httpx
+pytest-html
+allure-pytest
+playwright
+python-dotenv
+slack_sdk
+

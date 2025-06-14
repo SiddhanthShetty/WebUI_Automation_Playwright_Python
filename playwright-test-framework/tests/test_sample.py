@@ -16,7 +16,7 @@ def page(browser):
     context.close()
 
 def test_example(page):
-    page.goto("https://example.com")
-    assert page.title() == "Example Domain"
-    page.click("text=More information...")
-    assert page.url == "https://www.iana.org/domains/example"
+    page.goto("https://google.com")
+    print("Page Title: "+page.title())
+    page.screenshot(path="./screenshot/demo.png")
+    assert "Google" in page.title()
